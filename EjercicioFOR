@@ -1,0 +1,138 @@
+ * @author JuanA
+ */
+public class numerounalcien {
+    public static void main(String[] args) {
+    for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+* @author JuanA
+ */
+public class dieznumerossumar {
+    public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 10;
+        int suma = 0;
+
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            int numero = scanner.nextInt();
+            suma += numero;
+        }
+
+        System.out.println("La suma de los 10 números es: " + suma);
+    }
+}
+
+ * @author JuanA
+ */
+public class tablademultilicar {
+    public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número para mostrar su tabla de multiplicar: ");
+        int numero = scanner.nextInt();
+
+        System.out.println("Tabla de multiplicar del " + numero + ":");
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado); 
+            }
+    }
+}
+
+* @author JuanA
+ */
+public class letrasdelabecedario {
+    public static void main(String[] args) {
+    char letra = 'Z';
+
+        while (letra >= 'A') {
+            for (char c = 'A'; c <= letra; c++) {
+                System.out.print(c);
+            }
+            System.out.println();
+            letra--;
+        }
+    }
+}
+ * @author JuanA
+ */
+public class veintenumeros {
+    public static void main(String[] args) {
+        
+    
+Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 20;
+        int numerosPares = 0;
+        int numerosNegativos = 0;
+        int numerosCeros = 0;
+
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            int numero = scanner.nextInt();
+
+            if (numero % 2 == 0) {
+                numerosPares++;
+            }
+
+            if (numero < 0) {
+                numerosNegativos++;
+            }
+
+            if (numero == 0) {
+                numerosCeros++;
+            }
+        }
+
+        System.out.println("Números pares: " + numerosPares);
+        System.out.println("Números negativos: " + numerosNegativos);
+        System.out.println("Números iguales a cero: " + numerosCeros);
+}
+}
+ * @author JuanA
+ */
+public class digitardieznumeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 10;
+        int[] numeros = new int[cantidadNumeros];
+
+        // Solicitar al usuario que ingrese 10 números
+        for (int i = 0; i < cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + (i + 1) + ": ");
+            numeros[i] = scanner.nextInt();
+        }
+
+        // Imprimir en el orden especificado
+        System.out.println("El primero: " + numeros[0]);
+        System.out.println("El último: " + numeros[cantidadNumeros - 1]);
+        System.out.println("El segundo: " + numeros[1]);
+        System.out.println("El penúltimo: " + numeros[cantidadNumeros - 2]);
+        System.out.println("El tercero: " + numeros[2]);
+    }
+}
+* @author JuanA
+ */
+public class dibujocuadrado {
+    public static void main(String[] args) {
+        int lado = 5; // Tamaño del cuadrado
+
+        for (int i = 1; i <= lado; i++) {
+            for (int j = 1; j <= lado; j++) {
+                if (i == 1 || i == lado || j == 1 || j == lado) {
+                    System.out.print("x");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(); // Cambia de línea para la siguiente fila
+    }
+}
+}
